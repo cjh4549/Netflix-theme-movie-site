@@ -15,13 +15,6 @@ body {
   background-color: black;
 }
 
-.wrapper {
-}
-
-header {
-  padding: 2rem;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,7 +24,59 @@ header {
   z-index: 100;
 }
 
+.navbar__logo img {
+  max-width: 15rem;
+}
+
 .navbar__menu {
+  display: flex;
+}
+
+.navbar__menu li {
   list-style: none;
+}
+
+.navbar__menu li a {
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-right: 2.5rem;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+
+.navbar__menu li a:hover {
+  opacity: 1;
+}
+
+.navbar__search {
+  position: relative;
+  width: 30rem;
+  height: 4rem;
+}
+
+.navbar__search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+  border-radius: 4px;
+  padding: 0 1rem 0 4.5rem;
+}
+
+.navbar__search input::placeholder {
+  color: #fff;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
 }
